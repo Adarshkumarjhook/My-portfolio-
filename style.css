@@ -1,0 +1,461 @@
+@font-face {
+    font-family: ppmori;
+    src: url('ppmori-regular.woff2');
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #ECECEC;
+    background-repeat: no-repeat;
+    font-family: ppmori;
+    scroll-behavior: smooth;
+    background: #000000;
+    color: white;
+
+
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.page_1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.page_1 nav {
+    width: 100%;
+    height: 5vw;
+    padding-top: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.page_1 nav div {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.profile {
+    width: 100%;
+    height: calc(100vh - 5vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.profile_img_box {
+    width: 50%;
+
+}
+
+.profile_info {
+    line-height: 1.4;
+}
+
+
+
+
+
+
+.profile_btn button {
+    border: 1px solid black;
+        border: 1px solid white;
+
+    border-radius: 50px;
+    padding: 2vw 3vw;
+
+}
+
+.profile_icon {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+
+.page_2 {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.page_info_one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+
+}
+
+.page_info_one_img_box {
+    width: 35vw;
+    height: 35vw;
+}
+
+.page_info_one_img_box img {
+    border-radius: 15px;
+
+}
+
+
+
+
+.page_2_info_two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page_2_info_two>div {
+    border: 1px solid black;
+            border: 1px solid white;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 2vw 4vw;
+}
+
+
+.page_2_info_three {
+    text-align: center;
+}
+
+.page_2_info_fore {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    margin-top: 10vw;
+}
+
+.page_2_info_fore_ex_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3vw;
+
+}
+
+.skills {
+    border: 1px solid black;
+            border: 1px solid white;
+
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 2vw 2vw;
+
+
+
+}
+
+.skills .skills_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 3vw;
+    padding: 3vw 0vw;
+
+}
+
+.skill .checkmark {
+    width: 30px;
+    height: 30px;
+
+}
+
+
+.skills_box .skill {
+    display: flex;
+    gap: 1vw;
+    line-height: 1.2;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 0 3vw;
+}
+
+.Project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+
+}
+
+.Projects :nth-child(3) {
+    width: 100%;
+}
+
+
+
+
+.Project .Project_img_box img {
+    border-radius: 15px;
+}
+
+.Project .Project_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3vw;
+
+}
+
+.Project .Project_btn button {
+    display: block;
+    border: 1px solid black;
+            border: 1px solid white;
+
+    font-size: 2vw;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .profile {
+        width: 100%;
+        height: calc(100vh - 5vw);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .profile_info {
+        text-align: center;
+    }
+
+    .page_2_info_two {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .page_2_info_two>div {
+        border: 1px solid black;
+        display: flex;
+        width: 40%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 1.7vw 2vw;
+        text-align: center;
+    }
+
+
+
+
+
+    /* ___ */
+
+    .page_2_info_fore {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5vw;
+        margin-top: 10vw;
+    }
+
+    .page_2_info_fore_ex_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3vw;
+        gap: 3vw;
+
+    }
+
+    .skills {
+        border: 1px solid black;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 4vw 4vw;
+
+
+
+    }
+
+    .skills .skills_box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        gap: 3vw;
+        padding: 7vw 0vw;
+
+    }
+
+    .skill .checkmark {
+        width: 30px;
+        height: 30px;
+
+    }
+
+
+    .skills_box .skill {
+        display: flex;
+        gap: 1vw;
+        line-height: 1.2;
+        width: 45%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+
+
+    .skill .checkmark {
+        width: 20px;
+        height: 20px;
+
+    }
+
+
+
+
+
+    .skills h2 {
+        font-size: 4vw;
+    }
+
+    .skill div h3,
+    p {
+        font-size: 3vw;
+
+    }
+
+
+
+
+
+
+
+
+
+.Project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    width: 90%;
+
+}
+
+.Projects :nth-child(3) {
+    width: 90%;
+}
+
+
+
+
+.Project .Project_img_box img {
+    border-radius: 15px;
+}
+
+.Project .Project_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3vw;
+
+}
+
+.Project .Project_btn button {
+    display: block;
+    border: 1px solid black;
+    font-size: 2vw;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

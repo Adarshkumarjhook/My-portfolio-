@@ -1,0 +1,74 @@
+.main_nav{
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    background: #76C994;
+    z-index: 10;
+    display: none;
+    background: #9873F9;
+}
+
+.arrow{
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin: 30px;
+}
+
+
+.main_nav .manu{
+    display: flex;
+    flex-direction: column;
+    padding: 15vw 15vw;
+    gap: 5vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.manu_yo_dalo{
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    background: #FFFFFF;
+    top: 100px;
+    left: 300px;
+    z-index: 1000000;
+    transform: rotate(120deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 230vw;
+}
+.manu_yo_dalo h1{
+    font-size: 30vw;
+    
+
+}
+
+
+
+@media (max-width: 600px) {
+    
+    .manu_yo_dalo {
+        width: 40vw;
+        height: 100vh;
+        position: absolute;
+        background: #FFFFFF;
+        top: 130px;
+        left: 50px;
+        z-index: 1000000;
+        transform: rotate(120deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 200vw;
+    }
+    
+    
+    
+}
+ 
